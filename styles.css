@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  background-color: #f9f3f485;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  position: relative;
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.logo-title {
+  font-size: 1.1rem;
+  word-spacing: 6px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0;   
+  margin: 0;
+}
+
+textarea.message {
+  width: 70%;
+  height: 55vh;
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal; 
+  background-color:#efd5d9 ;
+  border-radius: 5px;
+  border: dotted 1.9px;
+  padding: 10px;
+  margin-top: 80px;
+  line-height: 1.3;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+input {
+  position: relative;
+  min-width: auto;
+  max-width: 400px;
+  height: 30px;
+}
+
+button {
+  width: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+button[name="submit"] {
+  width: auto;
+  padding: 5px 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .message {
+    width: 90%;
+  }
+
+  .write-a-letter {
+    display: none;
+  }
+}
